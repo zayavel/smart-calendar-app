@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="referrer" content="no-referrer" />
+  <title>Приватность — Умный календарь</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#f2f2f7; --card:#fff; --text:#111; --hint:#6b6b70; --accent:#2481cc; --border:rgba(60,60,67,.12); }
+    @media (prefers-color-scheme: dark) { :root { --bg:#0f0f10; --card:#1c1c1e; --text:#f2f2f7; --hint:#9a9aa0; --accent:#4aa3ff; --border:rgba(255,255,255,.12); } }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .page { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+    .brand { display:inline-flex; align-items:center; gap:10px; margin-bottom:20px; color:var(--hint); font-size:14px; text-decoration:none; }
+    .mark { width:34px; height:34px; border-radius:10px; background:linear-gradient(135deg,#2f8ef4,#1f6fd0); display:grid; place-items:center; color:#fff; font-size:18px; }
+    h1 { font-size:28px; line-height:1.2; margin:0 0 8px; }
+    .lead { color:var(--hint); margin:0 0 24px; }
+    h2 { font-size:19px; margin:28px 0 8px; }
+    p, li { margin:8px 0; }
+    ul { padding-left:20px; }
+    .card { background:var(--card); border:1px solid var(--border); border-radius:18px; padding:20px; margin:20px 0; }
+    a { color:var(--accent); }
+    .footer { margin-top:32px; color:var(--hint); font-size:13px; }
+    .footer a { margin-right:14px; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="brand" href="./"><span class="mark">📅</span> Умный календарь</a>
+    <h1>Политика приватности</h1>
+    <p class="lead">Редакция от 15 ноября 2026 года.</p>
+
+    <div class="card">
+      <p>Мы храним только те данные, которые нужны для работы календаря, задач и учёбы. Данные одного пользователя не видны другим.</p>
+    </div>
+
+    <h2>1. Какие данные мы храним</h2>
+    <ul>
+      <li>Telegram ID, имя, username и фото профиля (если доступно);</li>
+      <li>задачи, события, дедлайны, приоритеты и напоминания;</li>
+      <li>темы учёбы, материалы, куски и результаты проверок;</li>
+      <li>рутины, идеи и настройки обзоров;</li>
+      <li>голосовые сообщения и записи из приложения — только на время расшифровки;</li>
+      <li>идентификаторы платежей Telegram Stars и срок доступа.</li>
+    </ul>
+
+    <h2>2. Зачем</h2>
+    <p>Чтобы показывать ваш календарь, отправлять напоминания и обзоры, хранить прогресс учёбы и проверять оплаченный доступ.</p>
+
+    <h2>3. Где хранятся</h2>
+    <p>Данные хранятся в защищённой базе Supabase. Доступ к ним имеют только серверные функции бота и владелец сервиса для поддержки.</p>
+
+    <h2>4. Платежи</h2>
+    <p>Оплата проходит через Telegram Stars. Мы не получаем и не храним данные банковских карт. Хранятся только платёжные идентификаторы, сумма, тариф и срок действия доступа.</p>
+
+    <h2>5. Передача третьим лицам</h2>
+    <p>Мы не продаём и не передаём ваши данные третьим лицам. Технические данные обрабатываются Telegram (доставка сообщений и платежи) и Supabase (хранение).</p>
+
+    <h2>6. Срок хранения</h2>
+    <p>Данные хранятся, пока вы пользуетесь сервисом. Аудиозаписи из приложения удаляются сразу после расшифровки, распознанный текст хранится только в созданной вами записи. По запросу в поддержку аккаунт и связанные записи удаляются.</p>
+
+    <h2>7. Ваши права</h2>
+    <p>Вы можете запросить копию данных, исправление или удаление. Напишите в поддержку: <a href="https://t.me/mega_ultra_supp">@mega_ultra_supp</a>.</p>
+
+    <h2>8. Контакты</h2>
+    <p>Поддержка: <a href="https://t.me/mega_ultra_supp">@mega_ultra_supp</a>. Команда в боте: <code>/paysupport</code>.</p>
+
+    <div class="footer">
+      <a href="./terms.html">Условия</a>
+      <a href="./privacy.html">Приватность</a>
+      <a href="./support.html">Поддержка</a>
+    </div>
+  </main>
+</body>
+</html>
